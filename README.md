@@ -1,17 +1,48 @@
-# shop_app
+# Shopping Application
 
 A shopping application built with Flutter.
 
 ## Table of Contents
 - [Overview](#overview)
+- [Folder Structure](#folder-structure)
 - [Prerequisites](#prerequisites)
 - [Setup and Configuration](#setup-and-configuration)
 - [Running the App](#running-the-app)
-- [Adding Screenshots](#adding-screenshots)
-- [Screenshots](#screenshots)
 
 ## Overview
 This is a sample Flutter shopping app. It demonstrates navigation, state management, and UI design for a mobile commerce experience.
+
+## Folder Structure
+```
+shop_app/
+│
+├── android/        # Android native code and config
+├── ios/            # iOS native code and config
+├── linux/          # Linux platform support
+├── macos/          # macOS platform support
+├── windows/        # Windows platform support
+├── web/            # Web platform support
+├── assets/         # Images, fonts, and other assets
+│   ├── fonts/
+│   └── images/
+├── lib/            # Main source code
+│   ├── models/     # Data models
+│   ├── screens/    # App screens (UI pages)
+│   ├── services/   # Business logic/services
+│   ├── theme/      # Theme and styling
+│   ├── utils/      # Utility functions
+│   └── widgets/    # Reusable UI components
+├── test/           # Unit and widget tests
+├── pubspec.yaml    # Project metadata and dependencies
+└── README.md       # Project documentation
+```
+
+- **android/**, **ios/**, **linux/**, **macos/**, **windows/**, **web/**: Platform-specific code for building and running on each OS.
+- **assets/**: Contains images and fonts used in the app. Add your own images to `assets/images/`.
+- **lib/**: The main Dart source code. Organize your screens, models, services, and widgets here.
+- **test/**: Contains test files for your app.
+- **pubspec.yaml**: Declares dependencies and assets.
+- **README.md**: This file.
 
 ## Prerequisites
 - [Flutter SDK](https://docs.flutter.dev/get-started/install) (3.x recommended)
@@ -22,8 +53,8 @@ This is a sample Flutter shopping app. It demonstrates navigation, state managem
 ## Setup and Configuration
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd shop_app
+   git clone https://github.com/antonyjm462/shop-app.git
+   cd shop-app
    ```
 2. **Get dependencies**
    ```bash
@@ -42,19 +73,3 @@ This is a sample Flutter shopping app. It demonstrates navigation, state managem
    ```
    - For Android: Select an Android device/emulator.
    - For iOS: Select an iOS device/simulator (macOS required).
-
-## Adding Screenshots
-To add screenshots to this README:
-1. Take a screenshot on your emulator/device.
-2. Save the screenshot in the `assets/images/` directory (e.g., `assets/images/screenshot1.png`).
-3. Reference the screenshot in the README using Markdown:
-   ```markdown
-   ![Screenshot 1](assets/images/screenshot1.png)
-   ```
-
-## Screenshots
-Here are some example images from the app:
-
-| Home Screen | Product Detail | Bag Screen |
-|-------------|---------------|------------|
-| ![Home](assets/images/nike1.png) | ![Detail](assets/images/nike2.png) | ![Bag](assets/images/nike3.png) |
